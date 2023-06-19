@@ -57,7 +57,8 @@
               <span class="author-block">
                 <a href="https://nazirnayal.xyz/" target="_blank">Nazir Nayal</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=lfU8AYUAAAAJ&hl=en" target="_blank">Mısra Yavuz</a><sup>1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=lfU8AYUAAAAJ&hl=en" target="_blank">Mısra
+                  Yavuz</a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="https://www.robots.ox.ac.uk/~joao/" target="_blank">Joao F. Henriques</a> <sup>2</sup></span>
               <span class="author-block">
@@ -65,7 +66,8 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>KUIS AI Center, Koç University <sup>2</sup>University of Oxford</span> <!--<br>Conferance name and year -->
+              <span class="author-block"><sup>1</sup>KUIS AI Center, Koç University <sup>2</sup>University of
+                Oxford</span> <!--<br>Conferance name and year -->
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
@@ -148,11 +150,19 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus.
-              Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a
-              vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac
-              gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed
-              vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+              Standard semantic segmentation models owe their success to curated datasets with a fixed set of semantic
+              categories,without contemplating the possibility of identifying unknown objects from novel categories.
+              Existing methods in outlier detection suffer from a lack of smoothness and objectness in their
+              predictions, due to limitations of the per-pixel classification paradigm. Furthermore, additional training
+              for detecting outliers harms the performance of known classes. In this paper, we explore another paradigm
+              with region-level classification to better segment unknown objects. We show that the object queries in
+              mask classification tend to behave like one vs. all classifiers. Based on this finding, we propose a novel
+              outlier scoring function called RbA by defining the event of being an outlier as being rejected by all
+              known classes. Our extensive experiments show that mask classification improves the performance of the
+              existing outlier detection methods, and the best results are achieved with the proposed RbA.
+              We also propose an objective to optimize RbA using minimal outlier supervision. Further fine-tuning with
+              outliers improves the unknown performance, and unlike previous methods, it does not degrade the inlier
+              performance.
             </p>
           </div>
         </div>
