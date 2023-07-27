@@ -66,7 +66,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>KUIS AI Center, Koç University <sup>2</sup>University of
+              <span class="author-block"><sup>1</sup>KUIS AI Center and Department of Computer Engineering, Koç University <sup>2</sup>University of
                 Oxford</span> <br>ICCV 2023
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
@@ -130,7 +130,8 @@
       <div class="hero-body">
         <div class="row">
           <div class="column">
-            <img src="static/images/overview.jpg" alt="MY ALT TEXT" style="width:100%">
+            <!--add the following gif file static/gifs/ra_21_23_rba.gif-->
+            <img src="static/gifs/ra_21_23_rba.gif" alt="RbA" width="100%">
           </div>
         </div>
         <h2 class="subtitle has-text-justified">
@@ -174,6 +175,33 @@
     </div>
   </section>
   <!-- End paper abstract -->
+
+  <!-- Method Overview -->
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-2">Method Overview</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="static/images/overview.jpg" alt="MY ALT TEXT" style="width:100%">
+          </div>
+        </div>
+        <h2 class="subtitle has-text-justified">
+          Object queries (<i>colored</i> ) in mask classifiers each specialize in detecting a different semantic class,
+          and the performance of each query is <b>independent</b> of the other queries. Hence, we model each object
+          query as an independent
+          one vs. all classifier and consider unknown regions as those rejected by all (RbA) queries. RbA can be
+          regularized with outlier data
+          to supress the overconfidence of known class scores for unknown pixels.
+        </h2>
+      </div>
+    </div>
+    <br>
+    <hr>
+  </section>
 
 
   <!-- One vs. All Behavior -->
