@@ -135,15 +135,11 @@
             <img src="static/gifs/ra_21_23_rba.gif" alt="RbA" width="100%">
           </div>
         </div>
-        <div class="box"><b> <FONT COLOR="RED">TL;DR</FONT></b> sth </div>
-        <!-- <h2 class="subtitle has-text-justified">
-          Object queries (<i>colored</i> ) in mask classifiers each specialize in detecting a different semantic class,
-          and the performance of each query is <b>independent</b> of the other queries. Hence, we model each object
-          query as an independent
-          one vs. all classifier and consider unknown regions as those rejected by all (RbA) queries. RbA can be
-          regularized with outlier data
-          to supress the overconfidence of known class scores for unknown pixels.
-        </h2> -->
+        <div class="box">
+          <b> <FONT COLOR="RED">TL;DR</FONT></b>  Object queries in mask classification are implicitly one vs. all classifiers.
+          We acknoweldge this behavior and reinforce it so that unknown pixels are those rejected by all known classes.
+      </div>
+
       </div>
     </div>
   </section>
@@ -301,12 +297,12 @@
         <div class="columns is-centered has-text-centered">
           <h2 class="title is-2">Applying RbA to Real Life Videos</h2>
         </div>
-        <!-- add video: static/videos/rba_tesla_video.mp4-->
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%" width="100%">\
-            <source src="static/videos/rba_tesla_video.mp4" type="video/mp4">
-          </video>
-        </div>
+        <img src="static/gifs/real_life_example.gif" alt="RbA" width="100%">
+        <!-- add caption to the gif, make font smaller-->
+        <div class="content has-text-centered">          
+          <p style="font-size : 10px">
+            credit: https://www.youtube.com/watch?v=EOosn78WsMg
+          </p>
       </div>
     </div>
   </section>
@@ -330,114 +326,6 @@
       </iframe>
     </div>
   </section>
-
-
-  <!-- Image carousel -->
-  <!-- <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-            First image description.
-            <h2 class="subtitle has-text-centered">
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Second image description.
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Third image description.
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Fourth image description.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End image carousel -->
-
-
-
-
-  <!-- Youtube video -->
-  <!-- <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-
-        <h2 class="title is-3">Video Presentation</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-
-            <div class="publication-video">
-  
-              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End youtube video -->
-
-
-  <!-- Video carousel -->
-  <!-- <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Another Carousel</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
-              <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
-              <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\
-              <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End video carousel -->
-
-
-
-
-
-
-  <!-- Paper poster -->
-  <!-- <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title">Poster</h2>
-
-        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
-        </iframe>
-
-      </div>
-    </div>
-  </section> -->
-  <!--End paper poster -->
-
 
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
