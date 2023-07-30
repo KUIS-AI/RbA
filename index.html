@@ -132,7 +132,10 @@
         <div class="row">
           <div class="column">
             <!--add the following gif file static/gifs/ra_21_23_rba.gif-->
-            <img src="static/gifs/ra_21_23_rba.gif" alt="RbA" width="100%">
+            <!-- <img src="static/gifs/ra_21_23_rba.gif" alt="RbA" width="100%"> -->
+            <video autoplay loop muted inline> 
+              <source src="static/gifs/rba_teaser.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
         <div class="box">
@@ -254,14 +257,32 @@
         <div class="columns is-centered has-text-centered">
 
           <h2 class="title is-2">Analysis of Logits Behavior</h2>
-
+          
         </div>
       </div>
     </div>
   </section> -->
-
-
-
+  
+  
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-2">Applying RbA to Real Life Videos</h2>
+        </div>
+        <!-- <img src="static/gifs/real_life_example.mp4" alt="RbA" width="100%"> -->
+        <video autoplay loop muted inline> 
+          <source src="static/gifs/real_life_example.mp4" type="video/mp4">
+        </video>
+        <!-- add caption to the gif, make font smaller-->
+        <div class="content has-text-centered">          
+          <p style="font-size : 10px">
+            credit: https://www.youtube.com/watch?v=EOosn78WsMg
+          </p>
+      </div>
+    </div>
+  </section>
+  
 
   <!-- Qualitative Results -->
 
@@ -271,6 +292,7 @@
         <div class="columns is-centered has-text-centered">
           <h2 class="title is-2">Qualitative Results</h2>
         </div>
+        <br>
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <div class="content has-text-justified">
@@ -278,6 +300,7 @@
                 We show the qualitative results compared to previous SOTA on SMIYC Anomaly and Obstacle tracks:
               </p>
             </div>
+            <br>
           </div>
         </div>
         <div>
@@ -291,21 +314,6 @@
   </section>
 
 
-  <section class="section hero is-small">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <div class="columns is-centered has-text-centered">
-          <h2 class="title is-2">Applying RbA to Real Life Videos</h2>
-        </div>
-        <img src="static/gifs/real_life_example.gif" alt="RbA" width="100%">
-        <!-- add caption to the gif, make font smaller-->
-        <div class="content has-text-centered">          
-          <p style="font-size : 10px">
-            credit: https://www.youtube.com/watch?v=EOosn78WsMg
-          </p>
-      </div>
-    </div>
-  </section>
 
 
   <!-- Quantitative Results -->
